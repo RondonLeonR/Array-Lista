@@ -1,0 +1,47 @@
+Vectores
+Estatico.
+El vector se puede llenar.
+Se guarda datos en memoria (mal).
+1)a-Declaramos un puntero que apunte a la direccion de memoria
+
+2)Declaro un puntero a entero. 
+apunta al head
+int* vec;
+vec = malloc*5; (Ejemplo)
+guardo la primero direccion de memoria del heap
+despues voy guardando los datos progresivamente
+Realloc (para agregar mas elementos).
+Desventajas:
+Cuando quiero agragar datos y busco lugar sino encuentra lugar 
+libre consecutivo. 
+Busca lugar libre con la cantidad de memoria disponible para lo que pedimos
+Una vez lo encuentra LEVANTA toda la informacion.
+.
+
+3)int* vec[3]; (un vector de punteros) 
+En pila tenemos un vector
+    PILA  	   HEAP
+vec|0x39|0x1 ---- |  7  |0x39
+   |0x90|0x2_
+   |0x47|0x3 \___ |  8  |0x90
+           \
+	    \____ |  5  |0x47
+
+
+Esto NO necesita memoria consecutiva
+Desventaja: Sigue estando limitado (si definimos 3 lugares al vector se queda con eso )
+Sigue siendo ESTATICO.
+
+4)
+int** vec;
+vec=(int**)malloc(sizeof(int*)*3);
+
+     STACK	 HEAP		
+0X1| 0X10 |	|0x95 |0X10--->	| 7  |0x95
+     vec 	|0x742|0X11--->	| 8  |0x742
+		|0x9E1|0X12---> | 15 |0x9E1
+
+Si quiero hacer un swap solo cambio las direcciones de memoria que se 
+encuentran en el HEAP
+*(vec+0)
+*(this->pElements+i);
