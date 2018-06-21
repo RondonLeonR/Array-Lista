@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1529586326 source:c:\users\alumno\desktop\rondon\pruebadeprueba\funciones.c
+	"Funciones.h"
+
+1529588248 source:c:\users\alumno\desktop\rondon\pruebadeprueba\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayListUrgentes.h"
+
+1529585769 c:\users\alumno\desktop\rondon\pruebadeprueba\funciones.h
+
+1529587404 source:c:\users\alumno\desktop\rondon\pruebadeprueba\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529582373 c:\users\alumno\desktop\rondon\pruebadeprueba\arraylist.h
+
+1529588248 c:\users\alumno\desktop\rondon\pruebadeprueba\arraylisturgentes.h
+	"ArrayList.h"
+
+1529588505 source:c:\users\alumno\desktop\rondon\pruebadeprueba\arraylisturgentes.c
+	"ArrayListUrgentes.h"
+

@@ -33,6 +33,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../../../../../../PruebaDePrueba/Funciones.h" />
 		<Unit filename="../../../utest.c">
 			<Option compilerVar="CC" />
 		</Unit>
